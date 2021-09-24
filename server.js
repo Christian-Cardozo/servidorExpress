@@ -3,12 +3,12 @@ const express = require('express')
 
 const Contenedor = require('./Contenedor')
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 8080
 const app = express()
 
-app.listen(PORT, ()=> {
-    console.log(`Servidor escuchando el puerto ${PORT}`);
-})
+const SERVER = app.listen(PORT, ()=> console.log(`Servidor escuchando el puerto ${PORT}`))
+
+SERVER.on('error', error => console.log(`Error en servidor: ${error}`))
 
 app.get('/productos', async (req, res) => {
     const db = new Contenedor("productos.txt");    
