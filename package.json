@@ -1,0 +1,23 @@
+{
+  "name": "servidorexpress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Contenedor.js",
+  "scripts": {
+    "test": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Christian-Cardozo/servidorExpress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Christian-Cardozo/servidorExpress/issues"
+  },
+  "homepage": "https://github.com/Christian-Cardozo/servidorExpress#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
